@@ -1,0 +1,155 @@
+:root {
+  --dark: #1e3d59;
+  --primary: #ff6e40;
+  --friend: #ffc13b;
+  --light: #f5f0e1;
+}
+
+/* Utility */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p,
+.text-cont,
+ul,
+.suport .modal-body {
+  font-family: "Stylish", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--friend);
+  border: var(--friend);
+}
+
+.btn-warning {
+  background-color: var(--friend);
+}
+
+.btn-warning:hover {
+  background-color: var(--primary);
+  border: var(--primary);
+}
+
+.text-light {
+  color: var(--light);
+}
+
+/* Navbar */
+.edu-logo {
+  font-family: "Stylish", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--friend);
+
+}
+
+.more {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--primary);
+}
+
+.navbar-brand:hover {
+  color: var(--friend);
+}
+
+.bg-edu {
+  background-color: var(--dark);
+}
+
+.nav-link {
+  color: var(--friend);
+  font-family: "Stylish", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+/* Hero */
+.hero {
+  background-image: url(image/sudo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* About */
+.about {
+  background-color: var(--light);
+}
+
+.accordion {
+  width: 90%;
+}
+
+.accordion-button:active {
+  background-color: var(--friend);
+}
+
+.about h2 {
+  color: var(--dark);
+
+}
+
+/* Product */
+.product .active {
+  background-color: var(--friend);
+  border: var(--friend);
+  color: #1e3d59;
+}
+
+/* Suport */
+.suport {
+  background-color: var(--light);
+}
+
+.suport .card {
+  width: 95%;
+}
+
+.suport .modal-body {
+  background-color: var(--light);
+}
+
+.suport .modal-footer .btn-primary {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.suport .modal-footer .btn-primary:hover {
+  background-color: #29567d;
+  color: var(--light);
+}
+
+.suport .modal-footer {
+  background-color: var(--primary);
+}
+
+/* Footer */
+footer a,
+p {
+  text-decoration: none;
+  color: var(--light);
+}
+
+footer a:hover {
+  color: var(--friend);
+}
