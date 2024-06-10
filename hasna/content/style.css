@@ -1,0 +1,72 @@
+:root {
+  --bg: #4CCD99;
+  --primary: #FFC700;
+  --light: #FFF455;
+  --dark: #007F73;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.caveat {
+  font-family: 'Caveat';
+}
+
+.wenkai {
+  font-family: 'LXGW WenKai Mono TC';
+}
+
+/* Hero */
+.hero {
+  background-color: var(--dark);
+}
+
+/* About */
+.about .card {
+  background-color: var(--primary);
+}
+
+.about {
+  background-color: var(--bg);
+}
+
+.about .modal-header,
+.modal-footer {
+  background-color: var(--dark);
+}
+
+.about .modal-body {
+  background-color: var(--light);
+}
+
+.about .modal-footer .btn {
+  background-color: var(--primary);
+}
+
+.about .modal-footer .btn:hover {
+  background-color: var(--light);
+}
+
+.about .card .info {
+  background-color: var(--dark);
+}
+
+.about .card .info:hover {
+  background-color: var(--bg);
+}
+
+/* Content */
+.content .card {
+  background-color: var(--primary);
+}
+
+.content h2 {
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  background-color: #344955;
+}
