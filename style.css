@@ -1,155 +1,143 @@
-:root {
-  --dark: #1e3d59;
-  --primary: #ff6e40;
-  --friend: #ffc13b;
-  --light: #f5f0e1;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+  font-family: 'Quicksand', sans-serif;
 }
 
-/* Utility */
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-p,
-.text-cont,
-ul,
-.suport .modal-body {
-  font-family: "Stylish", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.btn-primary {
-  background-color: var(--primary);
-  border: var(--primary);
-}
-
-.btn-primary:hover {
-  background-color: var(--friend);
-  border: var(--friend);
-}
-
-.btn-warning {
-  background-color: var(--friend);
-}
-
-.btn-warning:hover {
-  background-color: var(--primary);
-  border: var(--primary);
-}
-
-.text-light {
-  color: var(--light);
-}
-
-/* Navbar */
-.edu-logo {
-  font-family: "Stylish", serif;
-  font-weight: 800;
-  font-style: normal;
-  color: var(--friend);
-
-}
-
-.more {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  color: var(--primary);
-}
-
-.navbar-brand:hover {
-  color: var(--friend);
-}
-
-.bg-edu {
-  background-color: var(--dark);
-}
-
-.nav-link {
-  color: var(--friend);
-  font-family: "Stylish", serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.nav-link:hover {
-  color: var(--primary);
-}
-
-/* Hero */
-.hero {
-  background-image: url(image/sudo.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-
-/* About */
-.about {
-  background-color: var(--light);
-}
-
-.accordion {
-  width: 90%;
-}
-
-.accordion-button:active {
-  background-color: var(--friend);
-}
-
-.about h2 {
-  color: var(--dark);
-
-}
-
-/* Product */
-.product .active {
-  background-color: var(--friend);
-  border: var(--friend);
-  color: #1e3d59;
-}
-
-/* Suport */
-.suport {
-  background-color: var(--light);
-}
-
-.suport .card {
-  width: 95%;
-}
-
-.suport .modal-body {
-  background-color: var(--light);
-}
-
-.suport .modal-footer .btn-primary {
-  background-color: var(--dark);
-  color: var(--light);
-}
-
-.suport .modal-footer .btn-primary:hover {
-  background-color: #29567d;
-  color: var(--light);
-}
-
-.suport .modal-footer {
-  background-color: var(--primary);
-}
-
-/* Footer */
-footer a,
-p {
+a{
   text-decoration: none;
-  color: var(--light);
+  color: #fff;
 }
 
-footer a:hover {
-  color: var(--friend);
+body{
+  color: #fff;
+  background-color: #e9ff99;
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.glass-container{
+  display: block;
+  max-width: 65%;
+  margin-top: 10vh;
+  margin-bottom: 30px;
+  background: rgba(0, 0, 0, 0.56);
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+}
+
+.logo {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+
+ul.nav-links{
+  margin: 0;
+  float: right;
+  display: flex;
+  list-style: none;
+}
+
+li.nav-link{
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+li.nav-link a:hover{
+  color: #92fe9d;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.main{
+  margin-top: 10vh;
+  display: inline-block;
+  padding: 20px;
+}
+
+.main h2{
+  font-size: 32px;
+}
+
+.main p{
+  font-size: 16px;
+  line-height: 23px;
+}
+
+button{
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover{
+  border-color: #00c9ff;
+  background-color: #00c9ff;
+}
+
+.image-wrapper img:first-child{
+  max-width: 240px;
+  margin-top: 10vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo{
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  nav ul.nav-links{
+    flex-direction: column;
+    margin-top: -7px;
+  }
+  li.nav-link {
+    font-size: 15px;
+    margin: 10px 0;
+
+  }
+  .main h2{
+    font-size: 28px;
+    margin-top: -50px;
+  }
+  .main p{
+    font-size: 15px;
+  }
+  button{
+    font-size: 13px;
+  }
+  .glass-container{
+    margin-top: 3vh;
+  }
+  .main{
+    padding: 10px;
+  }
+  .image-wrapper img{
+    max-width: 100px;
+  }
+}
+
